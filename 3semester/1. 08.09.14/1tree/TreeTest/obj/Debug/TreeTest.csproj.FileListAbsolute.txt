@@ -1,0 +1,7 @@
+D:\proga\Homework\3semester\1. 08.09.14\1tree\TreeTest\bin\Debug\TreeTest.dll
+D:\proga\Homework\3semester\1. 08.09.14\1tree\TreeTest\bin\Debug\TreeTest.pdb
+D:\proga\Homework\3semester\1. 08.09.14\1tree\TreeTest\bin\Debug\1tree.exe
+D:\proga\Homework\3semester\1. 08.09.14\1tree\TreeTest\bin\Debug\1tree.pdb
+D:\proga\Homework\3semester\1. 08.09.14\1tree\TreeTest\obj\Debug\TreeTest.csprojResolveAssemblyReference.cache
+D:\proga\Homework\3semester\1. 08.09.14\1tree\TreeTest\obj\Debug\TreeTest.dll
+D:\proga\Homework\3semester\1. 08.09.14\1tree\TreeTest\obj\Debug\TreeTest.pdb

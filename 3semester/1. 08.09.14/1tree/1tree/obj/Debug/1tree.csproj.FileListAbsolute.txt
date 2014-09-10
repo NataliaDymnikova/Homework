@@ -1,0 +1,6 @@
+D:\proga\Homework\3semester\1. 08.09.14\1tree\1tree\bin\Debug\1tree.exe.config
+D:\proga\Homework\3semester\1. 08.09.14\1tree\1tree\bin\Debug\1tree.exe
+D:\proga\Homework\3semester\1. 08.09.14\1tree\1tree\bin\Debug\1tree.pdb
+D:\proga\Homework\3semester\1. 08.09.14\1tree\1tree\obj\Debug\1tree.csprojResolveAssemblyReference.cache
+D:\proga\Homework\3semester\1. 08.09.14\1tree\1tree\obj\Debug\1tree.exe
+D:\proga\Homework\3semester\1. 08.09.14\1tree\1tree\obj\Debug\1tree.pdb
