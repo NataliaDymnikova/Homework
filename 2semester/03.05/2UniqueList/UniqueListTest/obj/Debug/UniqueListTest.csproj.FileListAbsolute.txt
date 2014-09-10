@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\03.05\2UniqueList\UniqueListTest\bin\Debug\UniqueListTest.dll
+D:\proga\MyProgram\2term\03.05\2UniqueList\UniqueListTest\bin\Debug\UniqueListTest.pdb
+D:\proga\MyProgram\2term\03.05\2UniqueList\UniqueListTest\bin\Debug\2UniqueList.exe
+D:\proga\MyProgram\2term\03.05\2UniqueList\UniqueListTest\bin\Debug\2UniqueList.pdb
+D:\proga\MyProgram\2term\03.05\2UniqueList\UniqueListTest\obj\Debug\UniqueListTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.05\2UniqueList\UniqueListTest\obj\Debug\UniqueListTest.dll
+D:\proga\MyProgram\2term\03.05\2UniqueList\UniqueListTest\obj\Debug\UniqueListTest.pdb

@@ -1,0 +1,24 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" x:Class="TicTacToe.MainPage"
+    mc:Ignorable="d"
+    d:DesignHeight="600" d:DesignWidth="600">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <sdk:Label HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="120"/>
+        <!--<Button Content="VVVV&#xD;&#xA;" HorizontalAlignment="Left" Margin="-1,1,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick" FontSize="20"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="400,0,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,200,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="200,200,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="400,200,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="0,400,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="200,400,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="400,400,0,0" VerticalAlignment="Top" Width="200" Height="200" Click="ButtonClick"/>
+   -->
+       
+    </Grid>
+</UserControl>

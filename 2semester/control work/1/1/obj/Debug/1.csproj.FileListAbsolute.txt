@@ -1,0 +1,9 @@
+D:\proga\MyProgram\2term\05.07\1\1\bin\Debug\1.exe.config
+D:\proga\MyProgram\2term\05.07\1\1\obj\Debug\1.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\05.07\1\1\bin\Debug\1.exe
+D:\proga\MyProgram\2term\05.07\1\1\bin\Debug\1.pdb
+D:\proga\MyProgram\2term\05.07\1\1\obj\Debug\1.exe
+D:\proga\MyProgram\2term\05.07\1\1\obj\Debug\1.pdb
+D:\proga\MyProgram\2term\control work\1\1\bin\Debug\1.exe.config
+D:\proga\MyProgram\2term\control work\1\1\obj\Debug\1.exe
+D:\proga\MyProgram\2term\control work\1\1\obj\Debug\1.pdb

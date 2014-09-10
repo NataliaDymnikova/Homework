@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\03.05\1parseTree\1parseTree\bin\Debug\1parseTree.exe.config
+D:\proga\MyProgram\2term\03.05\1parseTree\1parseTree\obj\Debug\1parseTree.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.05\1parseTree\1parseTree\bin\Debug\1parseTree.exe
+D:\proga\MyProgram\2term\03.05\1parseTree\1parseTree\bin\Debug\1parseTree.pdb
+D:\proga\MyProgram\2term\03.05\1parseTree\1parseTree\obj\Debug\1parseTree.exe
+D:\proga\MyProgram\2term\03.05\1parseTree\1parseTree\obj\Debug\1parseTree.pdb

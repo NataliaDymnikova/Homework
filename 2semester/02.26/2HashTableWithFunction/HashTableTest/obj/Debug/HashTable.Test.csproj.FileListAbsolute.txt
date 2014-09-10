@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\HashTableTest\obj\Debug\HashTable.Test.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\HashTableTest\obj\Debug\HashTableTest.dll
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\HashTableTest\bin\Debug\HashTableTest.dll
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\HashTableTest\bin\Debug\HashTableTest.pdb
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\HashTableTest\bin\Debug\2HashTableWithFunction.exe
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\HashTableTest\bin\Debug\2HashTableWithFunction.pdb
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\HashTableTest\obj\Debug\HashTableTest.pdb

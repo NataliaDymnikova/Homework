@@ -1,0 +1,14 @@
+D:\proga\MyProgram\2term\02.19\2list\ListTest\bin\Debug\ListTest.dll
+D:\proga\MyProgram\2term\02.19\2list\ListTest\bin\Debug\ListTest.pdb
+D:\proga\MyProgram\2term\02.19\2list\ListTest\bin\Debug\2list.exe
+D:\proga\MyProgram\2term\02.19\2list\ListTest\bin\Debug\2list.pdb
+D:\proga\MyProgram\2term\02.19\2list\ListTest\obj\Debug\List.Test.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\02.19\2list\ListTest\obj\Debug\ListTest.dll
+D:\proga\MyProgram\2term\02.19\2list\ListTest\obj\Debug\ListTest.pdb
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\ListTest\bin\Debug\ListTest.dll
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\ListTest\bin\Debug\ListTest.pdb
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\ListTest\bin\Debug\2HashTableWithFunction.exe
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\ListTest\bin\Debug\2HashTableWithFunction.pdb
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\ListTest\obj\Debug\List.Test.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\ListTest\obj\Debug\ListTest.dll
+D:\proga\MyProgram\2term\02.26\2HashTableWithFunction\ListTest\obj\Debug\ListTest.pdb

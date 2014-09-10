@@ -1,0 +1,9 @@
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\bin\Debug\1calculator.exe.config
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\obj\Debug\1calculator.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\obj\Debug\_1calculator.Properties.Resources.resources
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\obj\Debug\1calculator.csproj.GenerateResource.Cache
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\bin\Debug\1calculator.exe
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\bin\Debug\1calculator.pdb
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\obj\Debug\1calculator.exe
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\obj\Debug\1calculator.pdb
+D:\proga\MyProgram\2term\03.19\1calculator\1calculator\obj\Debug\_1calculator.CalculatorForm.resources

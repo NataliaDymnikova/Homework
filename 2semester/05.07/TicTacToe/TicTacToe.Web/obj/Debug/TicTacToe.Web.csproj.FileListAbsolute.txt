@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\05.07\TicTacToe\TicTacToe.Web\bin\TicTacToe.Web.dll.config
+D:\proga\MyProgram\2term\05.07\TicTacToe\TicTacToe.Web\bin\TicTacToe.Web.dll
+D:\proga\MyProgram\2term\05.07\TicTacToe\TicTacToe.Web\bin\TicTacToe.Web.pdb
+D:\proga\MyProgram\2term\05.07\TicTacToe\TicTacToe.Web\obj\Debug\TicTacToe.Web.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\05.07\TicTacToe\TicTacToe.Web\obj\Debug\TicTacToe.Web.dll
+D:\proga\MyProgram\2term\05.07\TicTacToe\TicTacToe.Web\obj\Debug\TicTacToe.Web.pdb

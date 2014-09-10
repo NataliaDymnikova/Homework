@@ -1,0 +1,14 @@
+D:\proga\MyProgram\2term\05.07\1\SortTest\bin\Debug\SortTest.dll
+D:\proga\MyProgram\2term\05.07\1\SortTest\bin\Debug\SortTest.pdb
+D:\proga\MyProgram\2term\05.07\1\SortTest\bin\Debug\1.exe
+D:\proga\MyProgram\2term\05.07\1\SortTest\bin\Debug\1.pdb
+D:\proga\MyProgram\2term\05.07\1\SortTest\obj\Debug\SortTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\05.07\1\SortTest\obj\Debug\SortTest.dll
+D:\proga\MyProgram\2term\05.07\1\SortTest\obj\Debug\SortTest.pdb
+D:\proga\MyProgram\2term\control work\1\SortTest\bin\Debug\SortTest.dll
+D:\proga\MyProgram\2term\control work\1\SortTest\bin\Debug\SortTest.pdb
+D:\proga\MyProgram\2term\control work\1\SortTest\bin\Debug\1.exe
+D:\proga\MyProgram\2term\control work\1\SortTest\bin\Debug\1.pdb
+D:\proga\MyProgram\2term\control work\1\SortTest\obj\Debug\SortTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\control work\1\SortTest\obj\Debug\SortTest.dll
+D:\proga\MyProgram\2term\control work\1\SortTest\obj\Debug\SortTest.pdb

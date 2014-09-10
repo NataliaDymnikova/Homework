@@ -1,0 +1,12 @@
+D:\proga\MyProgram\2term\03.12\CursorControl\CursorControl\bin\Debug\CursorControl.exe.config
+D:\proga\MyProgram\2term\03.12\CursorControl\CursorControl\bin\Debug\CursorControl.exe
+D:\proga\MyProgram\2term\03.12\CursorControl\CursorControl\bin\Debug\CursorControl.pdb
+D:\proga\MyProgram\2term\03.12\CursorControl\CursorControl\obj\Debug\4CursorControl.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.12\CursorControl\CursorControl\obj\Debug\CursorControl.exe
+D:\proga\MyProgram\2term\03.12\CursorControl\CursorControl\obj\Debug\CursorControl.pdb
+D:\proga\MyProgram\2term\03.12\4CursorControl\CursorControl\bin\Debug\CursorControl.exe.config
+D:\proga\MyProgram\2term\03.12\4CursorControl\CursorControl\obj\Debug\CursorControl.exe
+D:\proga\MyProgram\2term\03.12\4CursorControl\CursorControl\obj\Debug\CursorControl.pdb
+D:\proga\MyProgram\2term\03.12\4CursorControl\CursorControl\bin\Debug\CursorControl.exe
+D:\proga\MyProgram\2term\03.12\4CursorControl\CursorControl\bin\Debug\CursorControl.pdb
+D:\proga\MyProgram\2term\03.12\4CursorControl\CursorControl\obj\Debug\4CursorControl.csprojResolveAssemblyReference.cache

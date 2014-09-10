@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\03.19\1calculator\CalculateTest\bin\Debug\CalculateTest.dll
+D:\proga\MyProgram\2term\03.19\1calculator\CalculateTest\bin\Debug\CalculateTest.pdb
+D:\proga\MyProgram\2term\03.19\1calculator\CalculateTest\bin\Debug\1calculator.exe
+D:\proga\MyProgram\2term\03.19\1calculator\CalculateTest\bin\Debug\1calculator.pdb
+D:\proga\MyProgram\2term\03.19\1calculator\CalculateTest\obj\Debug\CalculateTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.19\1calculator\CalculateTest\obj\Debug\CalculateTest.dll
+D:\proga\MyProgram\2term\03.19\1calculator\CalculateTest\obj\Debug\CalculateTest.pdb

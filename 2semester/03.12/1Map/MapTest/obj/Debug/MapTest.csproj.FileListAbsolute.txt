@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\03.12\1Map\MapTest\bin\Debug\MapTest.dll
+D:\proga\MyProgram\2term\03.12\1Map\MapTest\bin\Debug\MapTest.pdb
+D:\proga\MyProgram\2term\03.12\1Map\MapTest\obj\Debug\MapTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.12\1Map\MapTest\obj\Debug\MapTest.dll
+D:\proga\MyProgram\2term\03.12\1Map\MapTest\obj\Debug\MapTest.pdb
+D:\proga\MyProgram\2term\03.12\1Map\MapTest\bin\Debug\1Map.exe
+D:\proga\MyProgram\2term\03.12\1Map\MapTest\bin\Debug\1Map.pdb

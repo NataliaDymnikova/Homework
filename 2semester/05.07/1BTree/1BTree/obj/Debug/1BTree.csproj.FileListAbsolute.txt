@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\05.07\1BTree\1BTree\bin\Debug\1BTree.exe.config
+D:\proga\MyProgram\2term\05.07\1BTree\1BTree\obj\Debug\1BTree.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\05.07\1BTree\1BTree\bin\Debug\1BTree.exe
+D:\proga\MyProgram\2term\05.07\1BTree\1BTree\bin\Debug\1BTree.pdb
+D:\proga\MyProgram\2term\05.07\1BTree\1BTree\obj\Debug\1BTree.exe
+D:\proga\MyProgram\2term\05.07\1BTree\1BTree\obj\Debug\1BTree.pdb

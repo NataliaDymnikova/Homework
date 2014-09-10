@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\04.02\2ADTset\SetTest\bin\Debug\SetTest.dll
+D:\proga\MyProgram\2term\04.02\2ADTset\SetTest\bin\Debug\SetTest.pdb
+D:\proga\MyProgram\2term\04.02\2ADTset\SetTest\bin\Debug\2ADTset.exe
+D:\proga\MyProgram\2term\04.02\2ADTset\SetTest\bin\Debug\2ADTset.pdb
+D:\proga\MyProgram\2term\04.02\2ADTset\SetTest\obj\Debug\SetTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\04.02\2ADTset\SetTest\obj\Debug\SetTest.dll
+D:\proga\MyProgram\2term\04.02\2ADTset\SetTest\obj\Debug\SetTest.pdb

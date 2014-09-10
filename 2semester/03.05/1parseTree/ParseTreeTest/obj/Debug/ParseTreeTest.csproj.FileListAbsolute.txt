@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\03.05\1parseTree\ParseTreeTest\bin\Debug\ParseTreeTest.dll
+D:\proga\MyProgram\2term\03.05\1parseTree\ParseTreeTest\bin\Debug\ParseTreeTest.pdb
+D:\proga\MyProgram\2term\03.05\1parseTree\ParseTreeTest\bin\Debug\1parseTree.exe
+D:\proga\MyProgram\2term\03.05\1parseTree\ParseTreeTest\bin\Debug\1parseTree.pdb
+D:\proga\MyProgram\2term\03.05\1parseTree\ParseTreeTest\obj\Debug\ParseTreeTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.05\1parseTree\ParseTreeTest\obj\Debug\ParseTreeTest.dll
+D:\proga\MyProgram\2term\03.05\1parseTree\ParseTreeTest\obj\Debug\ParseTreeTest.pdb

@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\04.02\1genericStack\StackTest\bin\Debug\StackTest.dll
+D:\proga\MyProgram\2term\04.02\1genericStack\StackTest\bin\Debug\StackTest.pdb
+D:\proga\MyProgram\2term\04.02\1genericStack\StackTest\bin\Debug\1genericStack.exe
+D:\proga\MyProgram\2term\04.02\1genericStack\StackTest\bin\Debug\1genericStack.pdb
+D:\proga\MyProgram\2term\04.02\1genericStack\StackTest\obj\Debug\StackTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\04.02\1genericStack\StackTest\obj\Debug\StackTest.dll
+D:\proga\MyProgram\2term\04.02\1genericStack\StackTest\obj\Debug\StackTest.pdb

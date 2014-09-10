@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\03.12\3Fold\3Fold\bin\Debug\3Fold.exe.config
+D:\proga\MyProgram\2term\03.12\3Fold\3Fold\bin\Debug\3Fold.exe
+D:\proga\MyProgram\2term\03.12\3Fold\3Fold\bin\Debug\3Fold.pdb
+D:\proga\MyProgram\2term\03.12\3Fold\3Fold\obj\Debug\3Fold.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.12\3Fold\3Fold\obj\Debug\3Fold.exe
+D:\proga\MyProgram\2term\03.12\3Fold\3Fold\obj\Debug\3Fold.pdb

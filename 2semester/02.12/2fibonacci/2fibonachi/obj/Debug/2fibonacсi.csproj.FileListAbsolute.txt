@@ -1,0 +1,4 @@
+D:\proga\MyProgram\2term\02.12\2fibonacci\2fibonachi\bin\Debug\2fibonachi.exe.config
+D:\proga\MyProgram\2term\02.12\2fibonacci\2fibonachi\obj\Debug\2fibonachi.exe
+D:\proga\MyProgram\2term\02.12\2fibonacci\2fibonachi\obj\Debug\2fibonachi.pdb
+D:\proga\MyProgram\2term\02.12\2fibonacci\2fibonachi\bin\Debug\2fibonacсi.exe.config

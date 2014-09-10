@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\02.12\7sortColumn\7sortColumn\bin\Debug\7sortColumn.exe.config
+D:\proga\MyProgram\2term\02.12\7sortColumn\7sortColumn\bin\Debug\7sortColumn.exe
+D:\proga\MyProgram\2term\02.12\7sortColumn\7sortColumn\bin\Debug\7sortColumn.pdb
+D:\proga\MyProgram\2term\02.12\7sortColumn\7sortColumn\obj\Debug\7sortColumn.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\02.12\7sortColumn\7sortColumn\obj\Debug\7sortColumn.exe
+D:\proga\MyProgram\2term\02.12\7sortColumn\7sortColumn\obj\Debug\7sortColumn.pdb

@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\03.12\3Fold\FoldTest\obj\Debug\FoldTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.12\3Fold\FoldTest\bin\Debug\FoldTest.dll
+D:\proga\MyProgram\2term\03.12\3Fold\FoldTest\bin\Debug\FoldTest.pdb
+D:\proga\MyProgram\2term\03.12\3Fold\FoldTest\bin\Debug\3Fold.exe
+D:\proga\MyProgram\2term\03.12\3Fold\FoldTest\bin\Debug\3Fold.pdb
+D:\proga\MyProgram\2term\03.12\3Fold\FoldTest\obj\Debug\FoldTest.dll
+D:\proga\MyProgram\2term\03.12\3Fold\FoldTest\obj\Debug\FoldTest.pdb

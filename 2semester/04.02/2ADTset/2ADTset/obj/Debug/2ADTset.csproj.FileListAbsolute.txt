@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\04.02\2ADTset\2ADTset\bin\Debug\2ADTset.exe.config
+D:\proga\MyProgram\2term\04.02\2ADTset\2ADTset\bin\Debug\2ADTset.exe
+D:\proga\MyProgram\2term\04.02\2ADTset\2ADTset\bin\Debug\2ADTset.pdb
+D:\proga\MyProgram\2term\04.02\2ADTset\2ADTset\obj\Debug\2ADTset.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\04.02\2ADTset\2ADTset\obj\Debug\2ADTset.exe
+D:\proga\MyProgram\2term\04.02\2ADTset\2ADTset\obj\Debug\2ADTset.pdb

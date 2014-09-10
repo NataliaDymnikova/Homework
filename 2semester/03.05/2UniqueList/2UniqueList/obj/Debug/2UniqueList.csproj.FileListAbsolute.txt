@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\03.05\2UniqueList\2UniqueList\bin\Debug\2UniqueList.exe.config
+D:\proga\MyProgram\2term\03.05\2UniqueList\2UniqueList\bin\Debug\2UniqueList.exe
+D:\proga\MyProgram\2term\03.05\2UniqueList\2UniqueList\bin\Debug\2UniqueList.pdb
+D:\proga\MyProgram\2term\03.05\2UniqueList\2UniqueList\obj\Debug\2UniqueList.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.05\2UniqueList\2UniqueList\obj\Debug\2UniqueList.exe
+D:\proga\MyProgram\2term\03.05\2UniqueList\2UniqueList\obj\Debug\2UniqueList.pdb

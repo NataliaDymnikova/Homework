@@ -1,0 +1,2 @@
+D:\proga\MyProgram\2term\02.12\3sort\3sort\bin\Debug\3sort.exe.config
+D:\proga\MyProgram\2term\02.12\3sort\3sort\obj\Debug\3sort.csprojResolveAssemblyReference.cache

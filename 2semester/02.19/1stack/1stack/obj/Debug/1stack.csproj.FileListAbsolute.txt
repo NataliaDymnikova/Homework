@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\02.19\1stack\1stack\bin\Debug\1stack.exe.config
+D:\proga\MyProgram\2term\02.19\1stack\1stack\bin\Debug\1stack.exe
+D:\proga\MyProgram\2term\02.19\1stack\1stack\bin\Debug\1stack.pdb
+D:\proga\MyProgram\2term\02.19\1stack\1stack\obj\Debug\1stack.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\02.19\1stack\1stack\obj\Debug\1stack.exe
+D:\proga\MyProgram\2term\02.19\1stack\1stack\obj\Debug\1stack.pdb

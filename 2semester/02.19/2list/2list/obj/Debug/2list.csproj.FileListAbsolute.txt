@@ -1,0 +1,12 @@
+D:\proga\MyProgram\2term\02.19\2list\2list\2list\bin\Debug\2list.exe.config
+D:\proga\MyProgram\2term\02.19\2list\2list\2list\bin\Debug\2list.exe
+D:\proga\MyProgram\2term\02.19\2list\2list\2list\bin\Debug\2list.pdb
+D:\proga\MyProgram\2term\02.19\2list\2list\2list\obj\Debug\2list.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\02.19\2list\2list\2list\obj\Debug\2list.exe
+D:\proga\MyProgram\2term\02.19\2list\2list\2list\obj\Debug\2list.pdb
+D:\proga\MyProgram\2term\02.19\2list\2list\bin\Debug\2list.exe.config
+D:\proga\MyProgram\2term\02.19\2list\2list\obj\Debug\2list.exe
+D:\proga\MyProgram\2term\02.19\2list\2list\obj\Debug\2list.pdb
+D:\proga\MyProgram\2term\02.19\2list\2list\obj\Debug\2list.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\02.19\2list\2list\bin\Debug\2list.exe
+D:\proga\MyProgram\2term\02.19\2list\2list\bin\Debug\2list.pdb

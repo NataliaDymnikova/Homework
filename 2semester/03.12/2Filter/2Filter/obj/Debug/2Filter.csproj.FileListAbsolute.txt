@@ -1,0 +1,6 @@
+D:\proga\MyProgram\2term\03.12\2Filter\2Filter\bin\Debug\2Filter.exe.config
+D:\proga\MyProgram\2term\03.12\2Filter\2Filter\bin\Debug\2Filter.exe
+D:\proga\MyProgram\2term\03.12\2Filter\2Filter\bin\Debug\2Filter.pdb
+D:\proga\MyProgram\2term\03.12\2Filter\2Filter\obj\Debug\2Filter.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.12\2Filter\2Filter\obj\Debug\2Filter.exe
+D:\proga\MyProgram\2term\03.12\2Filter\2Filter\obj\Debug\2Filter.pdb

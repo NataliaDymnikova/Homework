@@ -1,0 +1,7 @@
+D:\proga\MyProgram\2term\03.12\2Filter\FilterTest\bin\Debug\FilterTest.dll
+D:\proga\MyProgram\2term\03.12\2Filter\FilterTest\bin\Debug\FilterTest.pdb
+D:\proga\MyProgram\2term\03.12\2Filter\FilterTest\bin\Debug\2Filter.exe
+D:\proga\MyProgram\2term\03.12\2Filter\FilterTest\bin\Debug\2Filter.pdb
+D:\proga\MyProgram\2term\03.12\2Filter\FilterTest\obj\Debug\FilterTest.csprojResolveAssemblyReference.cache
+D:\proga\MyProgram\2term\03.12\2Filter\FilterTest\obj\Debug\FilterTest.dll
+D:\proga\MyProgram\2term\03.12\2Filter\FilterTest\obj\Debug\FilterTest.pdb
