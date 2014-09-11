@@ -53,6 +53,16 @@ namespace TreeTest
                 Assert.IsTrue(i == j++);
         }
 
+        [TestMethod]
+        public void DeleteAllTest()
+        {
+            for (int i = 1; i < 6; i++)
+            {
+                tree.Delete(i);
+                Assert.IsFalse(tree.IsExist(i));
+            }
+        }
+
         private Tree<int> tree;
     }
 }
