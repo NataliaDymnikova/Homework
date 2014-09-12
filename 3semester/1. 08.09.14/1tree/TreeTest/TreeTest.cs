@@ -4,6 +4,9 @@ using _1tree;
 
 namespace TreeTest
 {
+    /// <summary>
+    /// Class for testing tree.
+    /// </summary>
     [TestClass]
     public class TreeTestClass
     {
