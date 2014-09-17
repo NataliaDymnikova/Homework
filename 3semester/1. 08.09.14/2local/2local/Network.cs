@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace _2local
 {
@@ -11,69 +12,82 @@ namespace _2local
         public Network(string fileName)
         {
             ReadFromFile(fileName);
-            while (numberOfInfected != numberOfComps)
-            {
-                for (int i = 0; i < numberOfInfected; i++)
-                    Console.Write("{0} ", infected[i] + 1);
-                Console.WriteLine();
-                StepInfection();
-            }
-            for (int i = 0; i < numberOfInfected; i++)
-                Console.Write("{0} ", infected[i] + 1);
-            Console.WriteLine();
+            random = new Random();
         }
 
+        public string Run()
+        {
+            string str = "";
+            int j = 0;
+            while (numberOfInfected != numberOfComps)
+            {
+                for (int i = 0; i < numberOfComps; i++)
+                    if (comps[i].IsInfected)
+                        str += i + 1 + " ";
+                StepInfection();
+                str += '\n';
+            }
+            for (int i = 0; i < numberOfComps; i++)
+                str += i + 1 + " ";
+
+            return str;
+        }
         /// <summary>
         /// Read information from file.
         /// </summary>
         /// <param name="fileName"> Name of file. </param>
         private void ReadFromFile(string fileName)
         {
-            StreamReader reader;
-            if ((reader = new StreamReader(fileName)) == null)
+            StreamReader reader = new StreamReader(fileName);
+            if (reader == null)
             {
                 throw new FileLoadException("Can't open", fileName);
             }
 
-            // Number of computers.
+            // Number of comps and matrix.
             numberOfComps = Convert.ToInt32(reader.ReadLine());
-            comps = new bool[numberOfComps, numberOfComps];
+            compsMatrix = new Matrix(reader, numberOfComps);
 
-            // Matrix of comps.
-            for (int i = 0; i < numberOfComps; i++)
+            // Chance of Infection with number os OS.
+            int numberOfOS = Convert.ToInt32(reader.ReadLine());
+            opSysts = new OperationSystem[numberOfOS];
+            for (int i = 0; i < numberOfOS; i++)
             {
-                string[] strOfNumbers = reader.ReadLine().Split(' ');
-                for (int j = 0; j < strOfNumbers.Length; j++)
-                    comps[i, j] = Convert.ToBoolean(Convert.ToInt32(strOfNumbers[j]));
+                string[] temp = reader.ReadLine().Split(' ');
+                opSysts[i] = new OperationSystem(temp[0], 100 / Convert.ToInt32(temp[1]));
             }
 
             // Computer's OS.
-            opSyst = new string[numberOfComps];
+            comps = new Comp[numberOfComps];
             for (int i = 0; i < numberOfComps; i++)
             {
-                opSyst[i] = reader.ReadLine().Split(' ')[1];
+                comps[i] = new Comp(false, OpSystWithName(reader.ReadLine().Split(' ')[1]));
             }
 
             // Infected.
             numberOfInfected = 0;
-            infected = new int[numberOfComps];
             string[] arrayInfected = reader.ReadLine().Split(' ');
             for (int i = 0; i < arrayInfected.Length; i++)
             {
-                infected[i] = Convert.ToInt32(arrayInfected[i]) - 1;
+                comps[Convert.ToInt32(arrayInfected[i]) - 1].IsInfected = true;
                 numberOfInfected++;
             }
 
-            // Chance of Infection.
-            int numberOfOS = Convert.ToInt32(reader.ReadLine());
-            chanceOfInfection = new ArrayIntString(numberOfOS);
-            for (int i = 0; i < numberOfOS; i++)
-            {
-                string[] temp = reader.ReadLine().Split(' ');
-                chanceOfInfection.Add(100 / Convert.ToInt32(temp[1]), temp[0]);
-            }
-
             reader.Close();
+        }
+
+        /// <summary>
+        /// Return OperationSystem with this name.
+        /// </summary>
+        /// <param name="nameOpSyst"> Name of system. </param>
+        /// <returns></returns>
+        private OperationSystem OpSystWithName(string nameOpSyst)
+        {
+            for (int i = 0; i < opSysts.Length; i++)
+                if (opSysts[i].Name == nameOpSyst)
+                    return opSysts[i];
+
+            return null;
         }
 
         /// <summary>
@@ -81,67 +95,115 @@ namespace _2local
         /// </summary>
         private void StepInfection()
         {
-            int[] newInfected = new int[numberOfComps];
-            int newNumberOfInfected = numberOfInfected;
-            infected.CopyTo(newInfected, 0);
-            for (int i = 0; i < numberOfInfected; i++)
+            Comp[] newInfectedComps = new Comp[numberOfComps];
+            comps.CopyTo(newInfectedComps, 0);
+            for (int i = 0; i < numberOfComps; i++)
             {
-                for (int j = 0; j < numberOfComps; j++)
+                if (comps[i].IsInfected)
+                    for (int j = 0; j < numberOfComps; j++)
+                        if (compsMatrix.IsConnect(i, j))
+                            if (!comps[j].IsInfected && comps[j].Infect(random.Next(100)))
+                                numberOfInfected++;
+            }   
+            comps = newInfectedComps;
+        }
+
+        
+        /// <summary>
+        /// Class with name of system and chance of infection.
+        /// </summary>
+        private class OperationSystem
+        {
+            public OperationSystem(string name, int chanceOfInfection)
+            {
+                this.Name = name;
+                this.ChanceOfInfection = chanceOfInfection;
+            }
+
+            public int ChanceOfInfection
+            {
+                get;
+                private set;
+            }
+
+            public string Name
+            {
+                get;
+                private set;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private class Comp
+        {
+            public Comp(bool isInfected, OperationSystem opSyst)
+            {
+                this.IsInfected = isInfected;
+                this.opSyst = opSyst;
+            }
+
+            /// <summary>
+            /// Is infect comp after attempts to infect and infect if yes.
+            /// </summary>
+            /// <param name="rand"> Random number. </param>
+            /// <returns> True - if now it's infected, false - otherwise. </returns>
+            public bool Infect(int rand)
+            {
+                if (!IsInfected)
+                    IsInfected = (rand % opSyst.ChanceOfInfection == 0);
+
+                return IsInfected;
+            }
+            
+            public bool IsInfected
+            { 
+                get; set; 
+            }
+
+            private OperationSystem opSyst;
+        }
+
+        private class Matrix
+        {
+            public Matrix(StreamReader reader, int numberOfElements)
+            {
+                // Number of computers.
+                this.numberOfElements = numberOfElements;
+                comps = new bool[numberOfElements, numberOfElements];
+
+                // Matrix of comps.
+                for (int i = 0; i < numberOfElements; i++)
                 {
-                    if (infected[i] != j && comps[infected[i], j])
-                    {
-                        if (Infect(j))
-                        {
-                            newInfected[newNumberOfInfected++] = j;
-                        }
-                    }
+                    string[] strOfNumbers = reader.ReadLine().Split(' ');
+                    for (int j = 0; j < strOfNumbers.Length; j++)
+                        comps[i, j] = Convert.ToBoolean(Convert.ToInt32(strOfNumbers[j]));
                 }
-            }
-            numberOfInfected = newNumberOfInfected;
-            infected = newInfected;
-        }
-
-        /// <summary>
-        /// Will it infect or not.
-        /// </summary>
-        /// <param name="infected"> Number comp wich can will infect. </param>
-        /// <returns> True - if it will infect, false - otherwise. </returns>
-        private bool Infect(int infected)
-        {
-            if (IsInfectNow(infected))
-            {
-                return false;
+    
             }
 
-            Random rnd = new Random();
-            int i = rnd.Next();
-            if (i % chanceOfInfection.Number(opSyst[infected]) == 0)
+            /// <summary>
+            /// Return is two elements connected.
+            /// </summary>
+            /// <param name="first"></param>
+            /// <param name="second"></param>
+            /// <returns></returns>
+            public bool IsConnect(int first, int second)
             {
-                return true;
+                return (first < numberOfElements && second < numberOfElements) && comps[first, second];
             }
-            return false;
-        }
 
-        /// <summary>
-        /// Is comp is infect now.
-        /// </summary>
-        /// <param name="comp"> Number of computer. </param>
-        /// <returns> True - if this's infected, false - otherwise. </returns>
-        private bool IsInfectNow(int comp)
-        {
-            for ( int i = 0; i < numberOfInfected; i++)
-            {
-                if (infected[i] == comp)
-                    return true;
-            }
-            return false;
+            private bool[,] comps;
+            private int numberOfElements;
+        
         }
 
         private int numberOfComps;
         private int numberOfInfected;
-        private bool[,] comps;
-        private string[] opSyst;
-        private int[] infected;
-        private ArrayIntString chanceOfInfection;
+        private Matrix compsMatrix;
+        private Comp[] comps;
+        private OperationSystem[] opSysts;
+        private Random random;
     }
 }
