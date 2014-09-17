@@ -53,7 +53,10 @@ namespace TreeTest
         {
             int j = 1;
             foreach (int i in tree)
-                Assert.IsTrue(i == j++);
+            {
+                Assert.IsTrue(i == j);
+                j++;
+            }
         }
 
         [TestMethod]

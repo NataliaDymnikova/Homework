@@ -5,14 +5,11 @@ using System.Collections.Generic;
 namespace _1tree
 {
     /// <summary>
-    /// Class Tree.
+    /// Class binary tree with generic.
     /// </summary>
     /// <typeparam name="ElementType"> Type of elements. </typeparam>
     public class Tree<ElementType> where ElementType : IComparable<ElementType>
     {
-        public Tree()
-        {   }
-
         /// <summary>
         /// Add new element.
         /// </summary>
@@ -48,11 +45,15 @@ namespace _1tree
             return root.IsExist(value);
         }
 
-
-
+        /// <summary>
+        /// The implementation of generic.
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator<ElementType> GetEnumerator()
         {
-            foreach (ElementType i in root.Values())
+            List<ElementType> masOfValue = new List<ElementType>();
+            root.Values(masOfValue);
+            foreach (ElementType i in masOfValue)
                 yield return i;
         }
 
@@ -89,35 +90,18 @@ namespace _1tree
             /// <summary>
             /// Return array of all elements in tree.
             /// </summary>
-            /// <returns> Array of values. </returns>
-            public ElementType[] Values()
+            /// <param name="listValues"> List of values. </param>
+            public void Values(List<ElementType> listValues)
             {
-                ElementType[] mas;
                 if (left != null)
                 {
-                    if (right != null)
-                        mas = new ElementType[left.Values().Length + right.Values().Length + 1];
-                    else
-                        mas = new ElementType[left.Values().Length + 1];
-                    left.Values().CopyTo(mas, 0);
-                    mas[left.Values().Length] = value;
-                    if (right != null)
-                        right.Values().CopyTo(mas, left.Values().Length + 1);
+                    left.Values(listValues);
                 }
-                else 
+                listValues.Add(value);
+                if (right != null)
                 {
-                    if (right != null)
-                    {
-                        mas = new ElementType[right.Values().Length + 1];
-                        right.Values().CopyTo(mas, 1);
-                    }
-                    else
-                        mas = new ElementType[1];
-
-                    mas[0] = value;
+                    right.Values(listValues);
                 }
-                
-                return mas;
             }
 
 
@@ -153,15 +137,9 @@ namespace _1tree
                     return true;
 
                 if (value.CompareTo(searchValue) > 0)
-                    if (left != null)
-                        return left.IsExist(searchValue);
-                    else
-                        return false;
+                    return (left != null && left.IsExist(searchValue));
                 else
-                    if (right != null)
-                        return right.IsExist(searchValue);
-                    else
-                        return false;
+                    return (right != null && right.IsExist(searchValue));
             }
 
             /// <summary>
