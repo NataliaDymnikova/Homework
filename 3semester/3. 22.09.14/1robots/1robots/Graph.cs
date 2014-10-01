@@ -51,6 +51,24 @@ namespace _1robots
             return mas.ToArray();
         }
 
+        /// <summary>
+        /// Return array with points next next this point. 
+        /// </summary>
+        /// <param name="point"></param>
+        /// <returns></returns>
+        public List<int> NextNextPoints(int point)
+        {
+            List<int> list = new List<int>();
+            int[] nextPoints = WhoConnect(point);
+            for (int i = 0; i < nextPoints.Length; i++)
+            {
+                int[] iNextNextPoints = WhoConnect(nextPoints[i]);
+                list.AddRange(iNextNextPoints);
+            }
+
+            return list;
+        }
+
         private bool[,] graph;
         private int size;
     }

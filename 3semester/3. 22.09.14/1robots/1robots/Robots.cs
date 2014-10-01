@@ -29,13 +29,32 @@ namespace _1robots
         /// <returns> True - if all robots can die, false - otherwise. </returns>
         public bool Run()
         {
-            int[][] possiblePoints = new int[numberOfRobots][];
+            List<int>[] possiblePoints = new List<int>[numberOfRobots];
             for (int i = 0; i < numberOfRobots; i++)
             {
-                possiblePoints[i] = NextNextPoints(i);
+                possiblePoints[i] = new List<int>();
+                possiblePoints[i].Add(startPoints[i]);
             }
 
             bool[] isConnect = new bool[numberOfRobots];
+            for (int i = 0; i < numberOfRobots && !isAllElementsTrue(isConnect); i++)
+            {
+                OneStep(possiblePoints, isConnect);
+            }
+
+            return isAllElementsTrue(isConnect);
+        }
+
+        // Make one step. And add values to the possiblePoints and isConnect.
+        private bool OneStep(List<int>[] possiblePoints, bool[] isConnect)
+        {
+            for (int i = 0; i < numberOfRobots; i++)
+            {
+                List<int> tmp = new List<int>(possiblePoints[i]);
+                foreach (int j in tmp)
+                    possiblePoints[i].AddRange(graph.NextNextPoints(j));
+            }
+
             for (int i = 0; i < numberOfRobots; i++)
             {
                 for (int j = i + 1; j < numberOfRobots && !isConnect[i]; j++)
@@ -53,31 +72,29 @@ namespace _1robots
         }
 
         // Cheks two arrays have the same values or not.
-        private bool HaveSameValue(int[] first, int[] second)
+        private bool HaveSameValue(List<int> first, List<int> second)
         {
-            for (int i = 0; i < first.Length; i++)
+            foreach (int i in first)
             {
-                for (int j = 0; j < second.Length; j++)
+                foreach (int j in second)
                 {
-                    if (first[i] == second[j])
+                    if (i == j)
                         return true;
                 }
             }
+
             return false;
         }
         
-        // Return array with points where robot can jump (it can jump to the next next point)
-        private int[] NextNextPoints(int point)
+        // Return true - if all elements are true, false - otherwise.
+        private bool isAllElementsTrue(bool[] mas)
         {
-            List<int> list = new List<int>();
-            int[] nextPoints = graph.WhoConnect(startPoints[point]);
-            for (int i = 0; i < nextPoints.Length; i++)
+            for (int i = 0; i < mas.Length; i++)
             {
-                int[] iNextNextPoints = graph.WhoConnect(nextPoints[i]);
-                list.AddRange(iNextNextPoints);
+                if (!mas[i])
+                    return false;
             }
-
-            return list.ToArray();
+            return true;
         }
 
         private int[] startPoints;

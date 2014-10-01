@@ -16,30 +16,33 @@ namespace RobotsTest
         public void Initialize()
         {
             writer = new StreamWriter(nameFile);
-            writer.WriteLine("4");
-            writer.WriteLine("0 1 0 0");
-            writer.WriteLine("1 0 1 0");
-            writer.WriteLine("0 1 0 1");
-            writer.WriteLine("0 0 1 0");
-        }
-
-        [TestMethod]
-        public void FalseTest()
-        {
-            writer.WriteLine("1 2");
-            writer.Close();
-            robots = new Robots(nameFile);
-            Assert.IsFalse(robots.Run());
+            writer.WriteLine("7");
+            writer.WriteLine("0 1 0 0 0 0 0");
+            writer.WriteLine("1 0 1 0 0 0 0");
+            writer.WriteLine("0 1 0 1 0 0 0");
+            writer.WriteLine("0 0 1 0 1 0 0");
+            writer.WriteLine("0 0 0 1 0 1 0");
+            writer.WriteLine("0 0 0 0 1 0 1");
+            writer.WriteLine("0 0 0 0 0 1 0");
         }
 
         [TestMethod]
         public void TrueTest()
         {
-            writer.WriteLine("1 3");
+            writer.WriteLine("1 7");
             writer.Close();
             robots = new Robots(nameFile);
             Assert.IsTrue(robots.Run());
         }
+
+        [TestMethod]
+        public void FalseTest()
+        {
+            writer.WriteLine("1 2 7");
+            writer.Close();
+            robots = new Robots(nameFile);
+            Assert.IsFalse(robots.Run());
+        } 
 
         [TestCleanup]
         public void DeleteFile()
