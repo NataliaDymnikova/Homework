@@ -44,7 +44,7 @@ namespace _1robots
             List<int> mas = new List<int>();
             for (int i = 0; i < size; i++)
             {
-                if (graph[point, i])
+                if (graph[point, i] && point != i)
                     mas.Add(i);
             }
 
@@ -67,6 +67,15 @@ namespace _1robots
             }
 
             return list;
+        }
+
+        /// <summary>
+        /// Return size.
+        /// </summary>
+        /// <returns></returns>
+        public int Size()
+        {
+            return size;
         }
 
         private bool[,] graph;

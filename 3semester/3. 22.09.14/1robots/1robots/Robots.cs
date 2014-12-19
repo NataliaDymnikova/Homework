@@ -37,14 +37,47 @@ namespace _1robots
             }
 
             bool[] isConnect = new bool[numberOfRobots];
+            
             for (int i = 0; i < numberOfRobots && !isAllElementsTrue(isConnect); i++)
             {
-                OneStep(possiblePoints, isConnect);
+                if (isConnect[i])
+                    continue;
+                for (int j = 0; j <= graph.Size() / 2; j++)
+                    if (OneStepForOne(i, possiblePoints[i], isConnect))
+                        break;
             }
 
             return isAllElementsTrue(isConnect);
         }
 
+        // Make ine step for one and add possible points to the possisblePoints.
+        // Return true, if someone stay in one place with somejne else.
+        private bool OneStepForOne(int num, List<int> possiblePoints, bool[] isConnect)
+        {
+            List<int> tmp = new List<int>(possiblePoints);
+                foreach (int j in tmp)
+                    possiblePoints.AddRange(graph.NextNextPoints(j));
+            
+            foreach (int i in startPoints)
+                foreach (int j in possiblePoints)
+                {
+                    if (i == j)
+                    {
+                        int k;
+                        for (k = 0; k < numberOfRobots; k++)
+                            if (startPoints[k] == i)
+                                break;
+                        if (k == num)
+                            continue;
+                        isConnect[k] = isConnect[num]= true;
+
+                        return true;
+                    }
+                }
+            return false;
+        }
+
+        /*
         // Make one step. And add values to the possiblePoints and isConnect.
         private bool OneStep(List<int>[] possiblePoints, bool[] isConnect)
         {
@@ -70,6 +103,7 @@ namespace _1robots
             }
             return true;
         }
+        */
 
         // Cheks two arrays have the same values or not.
         private bool HaveSameValue(List<int> first, List<int> second)

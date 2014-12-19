@@ -16,14 +16,18 @@ namespace RobotsTest
         public void Initialize()
         {
             writer = new StreamWriter(nameFile);
-            writer.WriteLine("7");
-            writer.WriteLine("0 1 0 0 0 0 0");
-            writer.WriteLine("1 0 1 0 0 0 0");
-            writer.WriteLine("0 1 0 1 0 0 0");
-            writer.WriteLine("0 0 1 0 1 0 0");
-            writer.WriteLine("0 0 0 1 0 1 0");
-            writer.WriteLine("0 0 0 0 1 0 1");
-            writer.WriteLine("0 0 0 0 0 1 0");
+            writer.WriteLine("11");
+            writer.WriteLine("0 1 0 0 0 0 0 0 0 0 0");
+            writer.WriteLine("1 0 1 0 0 0 0 0 0 0 0");
+            writer.WriteLine("0 1 0 1 0 0 0 0 0 0 0");
+            writer.WriteLine("0 0 1 0 1 0 0 0 0 0 0");
+            writer.WriteLine("0 0 0 1 0 1 0 0 0 0 0");
+            writer.WriteLine("0 0 0 0 1 0 1 0 0 0 0");
+            writer.WriteLine("0 0 0 0 0 1 0 1 0 0 0");
+            writer.WriteLine("0 0 0 0 0 0 1 0 1 0 0");
+            writer.WriteLine("0 0 0 0 0 0 0 1 0 1 0");
+            writer.WriteLine("0 0 0 0 0 0 0 0 1 0 1");
+            writer.WriteLine("0 0 0 0 0 0 0 0 0 1 0");
         }
 
         [TestMethod]
@@ -43,6 +47,15 @@ namespace RobotsTest
             robots = new Robots(nameFile);
             Assert.IsFalse(robots.Run());
         } 
+
+        [TestMethod]
+        public void HardTest()
+        {
+            writer.WriteLine("1 2 11 8 4");
+            writer.Close();
+            robots = new Robots(nameFile);
+            Assert.IsTrue(robots.Run());
+        }
 
         [TestCleanup]
         public void DeleteFile()
