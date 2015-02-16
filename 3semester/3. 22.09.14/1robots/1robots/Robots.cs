@@ -55,8 +55,8 @@ namespace _1robots
         private bool OneStepForOne(int num, List<int> possiblePoints, bool[] isConnect)
         {
             List<int> tmp = new List<int>(possiblePoints);
-                foreach (int j in tmp)
-                    possiblePoints.AddRange(graph.NextNextPoints(j));
+            foreach (int j in tmp)
+                possiblePoints.AddRange(graph.NextNextPoints(j));
             
             foreach (int i in startPoints)
                 foreach (int j in possiblePoints)
@@ -69,7 +69,8 @@ namespace _1robots
                                 break;
                         if (k == num)
                             continue;
-                        isConnect[k] = isConnect[num]= true;
+                        isConnect[k] = true;
+                        isConnect[num] = true;
 
                         return true;
                     }
