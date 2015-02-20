@@ -3,7 +3,7 @@
 let main argv = 
     System.Console.WriteLine("Put a number:")
     let string = System.Console.ReadLine()
-    let number : int = int string
+    let number = int string
 
     let rec factorial n =
         if n = 1 

@@ -2,7 +2,7 @@
 [<EntryPoint>]
 let main argv = 
     System.Console.WriteLine("Put number:")
-    let number : int = int (System.Console.ReadLine())
+    let number = int (System.Console.ReadLine())
 
     let rec Fibbonacci num =
         if num <= 1
