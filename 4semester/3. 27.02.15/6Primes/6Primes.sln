@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "6Primes", "6Primes\6Primes.fsproj", "{A2CC3854-726D-476A-98CE-BA58879ECDAA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "3EvenNumber", "..\3EvenNumber\3EvenNumber\3EvenNumber.fsproj", "{09248A31-4B54-40DB-B201-8766F013AF00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2CC3854-726D-476A-98CE-BA58879ECDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CC3854-726D-476A-98CE-BA58879ECDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CC3854-726D-476A-98CE-BA58879ECDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CC3854-726D-476A-98CE-BA58879ECDAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09248A31-4B54-40DB-B201-8766F013AF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09248A31-4B54-40DB-B201-8766F013AF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09248A31-4B54-40DB-B201-8766F013AF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09248A31-4B54-40DB-B201-8766F013AF00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
