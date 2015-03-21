@@ -1,34 +1,4 @@
-﻿/// OS
-type OSEnum =
-    | Windows = 1
-    | Linux = 2
-let OS = [(OSEnum.Windows, 50); (OSEnum.Linux, 75)]
-
-/// Type of Computers - can try to infect, has member isInfect.
-type Computer (os : OSEnum, isInfect : bool) =
-    let protection = 
-        let rec recProtection list = 
-            match list with
-            | h::t -> 
-                let name, number = h
-                if name = os then
-                    number
-                else
-                    recProtection t
-            | _ -> 100
-        recProtection OS
-
-    let mutable isInfectMy =  isInfect
-    member c.Protection = protection
-    member c.IsInfect = isInfectMy
-
-    member c.TryToInfect = 
-        if not isInfect then
-            let r = System.Random().Next(1, 100)
-            if r < c.Protection then
-                isInfectMy <- true
-          
-    
+﻿module Program
 /// Initialization network
 let network = [|for x in 0..3 -> [|for y in 0..3 -> false|]|]
 network.[0].[1] <- true
@@ -38,14 +8,9 @@ network.[1].[2] <- true
 network.[3].[2] <- true
 network.[2].[3] <- true
 
-/// Initialization computers
-let computers = [new Computer(OSEnum.Windows, false); new Computer(OSEnum.Linux, true);new Computer(OSEnum.Linux, false); new Computer(OSEnum.Windows, false)]
-
 /// Check is all infect.
 let isAllInfect (computers : List<Computer>) =
-    let infects = List.filter (fun (x: Computer) -> x.IsInfect) computers
-    if infects.Length = computers.Length then true
-    else false
+    List.forall (fun (x: Computer) -> x.IsInfect) computers
 
 /// Make one step.
 let oneStep (computers : List<Computer>)=
