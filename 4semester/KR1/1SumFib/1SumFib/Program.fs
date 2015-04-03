@@ -13,7 +13,8 @@ let SumFib =
         elif numFib % 2 = 0 then
             recSumFib (num + 1) + numFib
         else
-        recSumFib (num + 1)
+            recSumFib (num + 1)
     recSumFib 1
 
+// result - 1089154
 printfn "%d" SumFib
