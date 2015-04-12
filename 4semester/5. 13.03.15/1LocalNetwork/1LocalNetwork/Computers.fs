@@ -17,6 +17,7 @@ type Computer (os : OSEnum, isInfect : bool) =
             let r = random.Next(1, 100)
             if r <= c.Protection then
                 isInfectMy <- true
+    member c.Copy() = new Computer(os, isInfect)
 
 /// Initialization computers
 let computers = [new Computer(OSEnum.Windows, false); new Computer(OSEnum.Linux, true);

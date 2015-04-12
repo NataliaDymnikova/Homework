@@ -1,8 +1,9 @@
 ﻿module Network
 open Computers
 
+let size = 3
 /// Initialization network
-let network = [|for x in 0..3 -> [|for y in 0..3 -> false|]|]
+let network = [|for x in 0..size -> [|for y in 0..size -> false|]|]
 network.[0].[1] <- true
 network.[1].[0] <- true
 network.[2].[1] <- true
