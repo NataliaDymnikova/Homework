@@ -1,17 +1,41 @@
-﻿/// Type Tree
+﻿open System
+open System.Collections
+
+/// Type Tree
 type Tree<'a> =
     | Node of 'a
     | Tree of Tree<'a> * 'a * Tree<'a>
     | Empty
 
-/// Interface Iterator
-type IIterator<'a> =
-    abstract Current : 'a
-    abstract MoveNext : bool
-
 /// Binary Search Tree
-type TreeClass<'a when 'a : comparison> (tree : Tree<'a> )= 
-    let tree = tree
+type TreeClass<'a when 'a : comparison> (tree : 'a Tree) = 
+   
+    interface IEnumerable with
+        member this.GetEnumerator() = 
+            let list = ref this.TreeToList
+            if !list = List.Empty then
+                { new IEnumerator with
+                    member x.Current with get() = null
+                    member x.Reset() = ()
+                    member x.MoveNext() = false
+                }
+            else
+                list:= (List.head !list)::!list
+                { new IEnumerator with
+                    member x.Current with get() = (List.head !list) :> obj
+                    member x.Reset() = 
+                        list := this.TreeToList
+                    member x.MoveNext() = 
+                        match !list with
+                        | h::t ->
+                            if t = [] then
+                                false
+                            else
+                                list := t
+                                true
+                        | [] -> false
+                }
+    //let tree = tree
     new() = TreeClass(Tree.Empty)
     
     /// Get tree
@@ -97,7 +121,7 @@ type TreeClass<'a when 'a : comparison> (tree : Tree<'a> )=
     
     /// Convert Tree to List
     member t.TreeToList =
-        let rec recTreeToList (tree : Tree<'a>) (list : List<'a>) = 
+        let rec recTreeToList (tree : 'a Tree) (list : 'a list) = 
             match tree with
             | Empty -> list
             | Node node -> [node]
@@ -106,22 +130,6 @@ type TreeClass<'a when 'a : comparison> (tree : Tree<'a> )=
                 let l = recTreeToList left list
                 List.append l (node::r)
         recTreeToList tree List.Empty
-
-    /// Iterator
-    member t.GetIterator = 
-        let list = ref t.TreeToList
-        { new IIterator<'a> with
-            member x.Current = List.head !list
-            member x.MoveNext = 
-                match !list with
-                | h::t ->
-                    if t = [] then
-                        false
-                    else
-                        list := t
-                        true
-                | [] -> false
-        }
 
 // Check
 let treeEmpty = new TreeClass<int>()
@@ -134,10 +142,10 @@ printfn "5 is exist - %A" (tree.IsExist 5)
 printfn "5 after delete is exist - %A" ((tree.Delete 5).IsExist 5)
 printfn ""
 
-let iter = tree.GetIterator
-let rec printIterator (iter : IIterator<int>) =
-    printf "%A " iter.Current
-    if iter.MoveNext then
-        printIterator iter
+printfn "%A " list
+for  i in tree do
+    printf "%A " i
+printfn ""
 
-printIterator iter
+for i in (new TreeClass<int>()) do
+    printf "%A " i
