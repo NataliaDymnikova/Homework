@@ -1,7 +1,8 @@
 ﻿open System.ComponentModel
 
 let mutable result = 0
-let array = Array.create 1000000 1
+let array = Array.create 1000001 1
+let flags = Array.create 100 false
 //let array = [for x in 1..1000000 -> 1]
     
 type PlusOneEvet (start) = 
@@ -15,6 +16,7 @@ type PlusOneEvet (start) =
     
     do worker.DoWork.Add(
         fun args -> 
+            System.Threading.Thread.Sleep 100
             let rec add num =
                 if worker.CancellationPending then
                     args.Cancel <- true
@@ -22,7 +24,8 @@ type PlusOneEvet (start) =
                     result <- result + (array.[num])
                     add (num + 1)
                 else
-                    args.Result <- result    
+                    args.Result <- result 
+                    flags.[start / 10000] <- true 
             add start  
         )
 
@@ -45,5 +48,14 @@ type PlusOneEvet (start) =
 let list = [for i in 0..99 -> new PlusOneEvet(1 + i * 10000)]
 for i in 0..99 do
     (list.Item i).RunWorkerAsync()
-
+    
+let isAllTrue mas =
+    let mutable temp = true
+    for i in 0..(min((Array.length mas) - 1)  99) do
+        if mas.[i] = false then
+            temp <- false
+    not temp    
+    
+while (isAllTrue flags) do ()
+    
 printfn "%d" result
